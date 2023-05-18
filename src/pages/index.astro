@@ -1,0 +1,128 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Cardgrid from '../components/Cardgrid.jsx'
+import Section2 from '../components/Section2.jsx'
+import Slideshow from '../components/Slideshow.jsx'
+import Doubleside from '../components/Doubleside';
+  
+const eventos = [
+  {
+    id: 1,
+    title: 'Evento1',
+    body: 'Para todos!!',
+    href: '#',
+    imageSrc: '/images/eventos/confrariavegana_evento (1).jpeg',
+    imageAlt: "Front of men's Basic Tee in black.",
+    price: '$35',
+    color: 'Black',
+  },
+  {
+    id: 2,
+    title: 'Evento2',
+    body: 'Evento2',
+    href: '#',
+    imageSrc: '/images/eventos/Formação de Yoga 2022 b.jpg',
+    imageAlt: "Front of men's Basic Tee in black.",
+    price: '$35',
+    color: 'Black',
+  },
+  {
+    id: 3,
+    title: 'Evento3',
+    body: 'sdjfh djfhsdjkf hsdkjf hsdkjfhsdfkjdsh fkjdsfh dkj',
+    href: '#',
+	imageSrc: '/images/eventos/confrariavegana_evento (1).jpeg',
+    imageAlt: "Front of men's Basic Tee in black.",
+    price: '$35',
+    color: 'Black',
+  }
+]
+
+const pratos = [
+  {
+    id: 1,
+    title: 'prato1',
+    body: 'sdjfh djfhsdjkf hsdkjf hsdkjfhsdfkjdsh fkjdsfh dkj',
+    href: '#',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+    imageAlt: "Front of men's Basic Tee in black.",
+    price: '$35',
+    color: 'Black',
+  },
+  {
+    id: 2,
+    title: 'prato2',
+    body: 'sdjfh djfhsdjkf hsdkjf hsdkjfhsdfkjdsh fkjdsfh dkj',
+    href: '#',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+    imageAlt: "Front of men's Basic Tee in black.",
+    price: '$35',
+    color: 'Black',
+  },
+  {
+    id: 3,
+    title: 'prato3',
+    body: 'sdjfh djfhsdjkf hsdkjf hsdkjfhsdfkjdsh fkjdsfh dkj',
+    href: '#',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+    imageAlt: "Front of men's Basic Tee in black.",
+    price: '$35',
+    color: 'Black',
+  }
+]
+
+const slideshowItems = [
+	{title: '',img: 'images/316012219_572656021526128_553771606498375312_n.jpg'},
+	{title: '', img: 'images/315595379_572656098192787_8528414643833640620_n.jpg'}]
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+
+		<Slideshow items={slideshowItems} />
+
+		<section>
+			<div class="text-center m-4">
+				<h2>Próximos eventos</h2>
+			</div>
+			<div class="card-group" style="max-width: 90%;float: none; margin: 0 auto;">
+				{eventos.map(item=>(
+					<Cardgrid item={item}/>)
+				)}
+			</div>
+		</section>
+
+		<Doubleside type=1 title="Entenda mais sobre veganismo" img="images/retail-shop-owner-mask-social-distancing-shopping.jpg">
+			Teste teste teste
+		</Doubleside>
+
+		<Doubleside type=2 title="Entenda mais sobre veganismo" img="images/retail-shop-owner-mask-social-distancing-shopping.jpg">
+			d sad sd sadasdsad
+		</Doubleside>
+
+		<section>
+			<div class="text-center m-4">
+				<h2>Nossos pratos</h2>
+			</div>
+			<div class="card-group" style="max-width: 90%;float: none; margin: 0 auto;">
+				{pratos.map(item=>(
+					<Cardgrid item={item}/>)
+				)}
+			</div>
+		</section>
+
+		<Doubleside 
+			type=3 title="Aonde estamos" 
+			img="images/retail-shop-owner-mask-social-distancing-shopping.jpg">
+			
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.845862232867!2d-45.46752338949647!3d-22.77110083294911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc8dd6afbebb7d%3A0xf483b2816174680a!2sEspa%C3%A7o%20Cultural%20e%20Restaurante%20Confraria%20Vegana!5e0!3m2!1spt-BR!2sbr!4v1684284549318!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		 
+		</Doubleside>
+
+		
+		
+		<br/><br/>
+	</main>
+</Layout>
+
