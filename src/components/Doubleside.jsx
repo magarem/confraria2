@@ -71,7 +71,7 @@ export default ({type, title, img, children}) => {
                   
                   <div class="col-6 _px-0">
                       <h3 class="mb-1">{title}</h3>
-                      <p class="_lead mb-4 fs-5">{children}</p>
+                      <p class="_lead mb-4 text-black">{children}</p>
                   </div>
                   <div class="col-6 ">
                       <img src={img} alt="Snow" class=" img-fluid mt-4"/>

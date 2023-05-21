@@ -13,7 +13,7 @@ export default (props) => {
 
                             <p class="lead text-white mt-lg-3 mb-lg-5">{item.body}</p>
 
-                            <a href="about.html" class="btn custom-btn">Contato</a>
+                            {/* <a href="about.html" class="btn custom-btn">Contato</a> */}
                         </div>
                     </div>
                 </div>
