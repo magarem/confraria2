@@ -5,18 +5,18 @@ import { log } from 'astro/dist/core/logger/core';
 const pratos = [
   {
     id: 1,
-    title: 'Prato1',
-    body: 'Para todos!!',
+    title: 'Grão de bico, legumes e curry',
+    body: 'Esta criação culinária excepcional é uma mistura perfeita de sabores exóticos e texturas deliciosas, projetada para encantar até mesmo os paladares mais exigentes. Com uma base de curry aromático e repleto de ingredientes frescos, este prato vegano é uma explosão de cores, nutrientes e satisfação.',
     href: '#',
-    imageSrc: '/images/pratos/prato1.jpeg',
+    imageSrc: '/images/pratos/grao-de-bico-legumes-e-curry-na-panela-de-pressao-9231.jpg',
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$35',
     color: 'Black',
   },
   {
     id: 2,
-    title: 'Prato2',
-    body: 'Evento2',
+    title: 'Dall de ervilha, arroz e batata rústica',
+    body: 'Apresentamos o nosso prato vegano estrela: Arroz com Batata Rústica e Dal de Ervilha. Com arroz cozido perfeitamente, batatas rústicas crocantes e um dal cremoso de ervilha, essa combinação deliciosa oferece uma experiência gastronômica única. Utilizando ingredientes frescos e técnicas culinárias refinadas, cada garfada proporciona uma explosão de sabores e uma refeição vegana nutritiva e saborosa. Junte-se a nós e experimente essa delícia vegana em nosso restaurante.',
     href: '#',
     imageSrc: '/images/pratos/prato2.jpeg',
     imageAlt: "Front of men's Basic Tee in black.",
@@ -25,8 +25,8 @@ const pratos = [
   },
   {
     id: 3,
-    title: 'Prato3',
-    body: 'sdjfh djfhsdjkf hsdkjf hsdkjfhsdfkjdsh fkjdsfh dkj',
+    title: 'Torta Banof Vegana: Uma Delícia Cremosa e Irresistível',
+    body: 'Apresentamos com entusiasmo nossa torta Banof vegana, uma verdadeira tentação para os amantes de sobremesas. Essa maravilha culinária combina uma base crocante de biscoito vegano, um creme de caramelo de banana suave e uma camada generosa de chantilly vegano. Cada mordida é uma explosão de sabores decadentes, com a doçura das bananas maduras equilibrando perfeitamente o caramelo sedoso e o saboroso chantilly. Nossa torta Banof vegana é uma opção irresistível para encerrar uma refeição perfeita e satisfazer sua vontade de sobremesa de forma indulgente e livre de ingredientes de origem animal.',
     href: '#',
     imageSrc: '/images/pratos/torta_banof.jpeg',
     imageAlt: "Front of men's Basic Tee in black.",
@@ -47,7 +47,7 @@ console.log(11, id)
         <section class="pt-0 products _section-padding">
             <div class="container">
                 <div class="row">
-                    <Pratos sessiontitle="Pratos" items={pratos} mainid={id} />
+                    <Pratos sessiontitle="Menu" items={pratos} mainid={id} />
                 </div>
             </div>
         </section>

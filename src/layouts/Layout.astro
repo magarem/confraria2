@@ -32,6 +32,18 @@ const { title } = Astro.props;
         <link rel="stylesheet" href="css/slick.css"/>
 
         <link href="css/tooplate-little-fashion.css" rel="stylesheet">
+		<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+		<style>
+			h1 {
+				font-family: 'Crimson Pro', serif;
+				font-size: 48px;
+			}
+			.h2 {
+				font-family: 'Crimson Pro', serif;
+				font-size: 10px;
+			}
+		</style>
 		<!--
 
 		Tooplate 2127 Little Fashion
@@ -51,13 +63,12 @@ const { title } = Astro.props;
 				<!-- <a class="navbar-brand" href="index.html">
 					<strong><span>Confraria</span> Vegana</strong>
 				</a> -->
-				<a class="navbar-brand " href="index.html" style="margin-top: -17px; margin-bottom: -17px;">
-				<img src="images/logo.png" class="p-0 m-0" style="width: 90px; "/>
+				<a class="navbar-brand" href="/" style="margin-top: -17px; margin-bottom: -17px; margin-left: -25px;">
+					<img src="images/logo.png" class="p-0 m-0" style="width: 90px; "/>
 				</a>
 				<div class="d-lg-none">
-					<a href="sign-in.html" class="bi-person custom-icon me-3"></a>
-
-					<a href="product-detail.html" class="bi-bag custom-icon"></a>
+					<!-- <a href="sign-in.html" class="bi-person custom-icon me-3"></a>
+					<a href="product-detail.html" class="bi-bag custom-icon"></a> -->
 				</div>
 
 				<div class="collapse navbar-collapse" id="navbarNav">
@@ -75,7 +86,7 @@ const { title } = Astro.props;
 						</li>
 
 						<li class="nav-item">
-							<a class={`nav-link ${path=="pratos" ? "active" : ""}`} href="pratos">Pratos</a>
+							<a class={`nav-link ${path=="pratos" ? "active" : ""}`} href="pratos">Menu</a>
 						</li>
 
 						<li class="nav-item">
@@ -83,11 +94,11 @@ const { title } = Astro.props;
 						</li>
 					</ul>
 
-					<div class="d-none d-lg-block">
+					<!-- <div class="d-none d-lg-block">
 						<a href="sign-in.html" class="bi-person custom-icon me-3"></a>
 
 						<a href="product-detail.html" class="bi-bag custom-icon"></a>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</nav>
@@ -97,25 +108,23 @@ const { title } = Astro.props;
 				<div class="row">
 
 					<div class="col-lg-3 col-10 me-auto mb-4">
-						<h4 class="text-white mb-3"><a href="index.html">Little</a> Fashion</h4>
-						<p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">Copyright © 2022 <strong>Little Fashion</strong></p>
+						<a href="/"><img src="images/logo.png" class="p-0 m-0" style="width: 90px; "/>
+						<p class="copyright-text text-muted mt-lg-4 mb-4 mb-lg-0">Copyright © 2023 <strong>Confraria vegana</strong></p>
 						<br>
-						<p class="copyright-text">Designed by <a href="https://www.tooplate.com/" target="_blank">Tooplate</a></p>
+						<p class="copyright-text">Designed by <a href="https://www.magaweb.com.br/" target="_blank">Magaweb</a></p>
 					</div>
 
 					<div class="col-lg-5 col-8">
 						<h5 class="text-white mb-3">Sitemap</h5>
 
 						<ul class="footer-menu d-flex flex-wrap">
-							<li class="footer-menu-item"><a href="about.html" class="footer-menu-link">Story</a></li>
+							<li class="footer-menu-item"><a href="about" class="footer-menu-link">Sobre nós</a></li>
 
-							<li class="footer-menu-item"><a href="#" class="footer-menu-link">Products</a></li>
+							<li class="footer-menu-item"><a href="eventos" class="footer-menu-link">Eventos</a></li>
 
-							<li class="footer-menu-item"><a href="#" class="footer-menu-link">Privacy policy</a></li>
+							<li class="footer-menu-item"><a href="pratos" class="footer-menu-link">Menu</a></li>
 
-							<li class="footer-menu-item"><a href="#" class="footer-menu-link">FAQs</a></li>
-
-							<li class="footer-menu-item"><a href="#" class="footer-menu-link">Contact</a></li>
+							<li class="footer-menu-item"><a href="contact" class="footer-menu-link">Contato</a></li>
 						</ul>
 					</div>
 
@@ -146,17 +155,17 @@ const { title } = Astro.props;
 		<script src="/js/custom.js" is:inline></script>
 	</body>
 </html>
-<!-- <style is:global>
+<style is:global>
 	:root {
 		--accent: 124, 58, 237;
 		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
 	}
 	html {
-		font-family: system-ui, sans-serif;
-		background-color: #F6F6F6;
+		font-family: 'Crimson Pro', serif;
+		/* background-color: #F6F6F6; */
 	}
 	code {
 		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
 			Bitstream Vera Sans Mono, Courier New, monospace;
 	}
-</style> -->
+</style>

@@ -68,29 +68,24 @@ export default ({type, title, img, children}) => {
             {type==5&&
                
                <div class="row">
-                  
-                  <div class="col-6 _px-0">
-                      <h3 class="mb-1">{title}</h3>
+                  <div class="col-md-6 col-sm-12 _px-0">
+                      <h5 class="mb-1 text-secondary">{title}</h5>
                       <p class="_lead mb-4 text-black">{children}</p>
                   </div>
-                  <div class="col-6 ">
+                  <div class="col-md-6 col-sm-12">
                       <img src={img} alt="Snow" class=" img-fluid mt-4"/>
                   </div>
               </div>
               }
             {type==6&&
-               
                <div class="row">
-                 
-                  
-                  <div class="col-12 px-4">
-                  <div class="text-center m-4">
-				<h2>{title}</h2>
-			</div>
-                      <p class="_lead mb-4">{children}</p>
-                  </div>
-                 
-              </div>
+                    <div class="col-12 px-4">
+                        <div class="text-center m-4">
+                            <h5 class="text-secondary">{title}</h5>
+                        </div>
+                        <p class="_lead mb-4">{children}</p>
+                    </div>
+                </div>
               }
         </div>
     </div>

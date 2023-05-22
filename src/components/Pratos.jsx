@@ -26,12 +26,12 @@ export default (props) => {
                     <div class="container text-left">
                         {items.map(item=>(
                             <div class="row mb-5">
-                                <div class="col-2 ">
-                                    <div class="product-thumb">
-                                        <img src={item.imageSrc} style="width: 200px;" class="img-fluid product-image" alt=""/>
+                                <div class="col-md-2 col-sm-12">
+                                    <div class="product-thumb mb-3">
+                                        <img src={item.imageSrc} style="width: 350px;" class="img-fluid product-image" alt=""/>
                                     </div>
                                 </div>
-                                <div class="col-10">
+                                <div class="col-md-10 col-sm-12">
                                         <div _class="product-info d-flex">
                                                 <h5 class="product-title">
                                                     {/* <a href={"/eventos?id="+item.id} class="product-title-link"> */}

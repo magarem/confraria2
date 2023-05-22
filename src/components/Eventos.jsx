@@ -13,14 +13,14 @@ export default (props) => {
                         <h2 class="mb-5">{sessiontitle}</h2>
                     </div> 
                     <div class="row mb-5">
-                        <div class="col-4 bg-slate-400">
+                        <div class="col-md-4 col-sm-12 bg-slate-400">
                             <div style="max-width: 400px">
                                 <img src={items[index].imageSrc} class="img-fluid product-image" alt=""/>
                             </div>
                         </div>
-                        <div class="col-8 bg-gray-950">
-                            <h2>{items[index].title}</h2>
-                            {items[index].body}
+                        <div class="col-md-8 col-sm-12 bg-gray-950">
+                            <h4>{items[index].title}</h4>
+                            <p>{items[index].body}</p>
                         </div>
                     </div>
                     <div class="row mt-3">
