@@ -1,8 +1,10 @@
 import { defineConfig } from 'astro/config';
-import tailwind from "@astrojs/tailwind";
-import alpinejs from "@astrojs/alpinejs";
-import react from "@astrojs/react";
-import vue from "@astrojs/vue";
+// import tailwind from "@astrojs/tailwind";
+// import alpinejs from "@astrojs/alpinejs";
+// import react from "@astrojs/react";
+// import vue from "@astrojs/vue";
+
+import solidJs from "@astrojs/solid-js";
 
 import vercel from "@astrojs/vercel/serverless";
 
@@ -10,5 +12,5 @@ import vercel from "@astrojs/vercel/serverless";
 export default defineConfig({
   output: 'server',
   adapter: vercel(),
-  integrations: [tailwind(), alpinejs(), react(), vue()]
+  integrations: [ solidJs()]
 });
