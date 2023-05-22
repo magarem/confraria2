@@ -8,5 +8,6 @@ import solidJs from "@astrojs/solid-js";
 export default defineConfig({
   //   integrations: [tailwind()]
   output: 'server',
+  adapter: vercel(),
   integrations: [solidJs()]
 });
